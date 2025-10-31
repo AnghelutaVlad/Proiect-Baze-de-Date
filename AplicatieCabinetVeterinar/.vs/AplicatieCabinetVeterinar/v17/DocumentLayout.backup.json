@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|c:\\users\\vlad\\source\\repos\\aplicatiecabinetveterinar\\aplicatiecabinetveterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\aplicatiecabinetveterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B947488-A252-4596-BA1D-16941E323A4D}|AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar.csproj|solutionrelative:aplicatiecabinetveterinar\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form1.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form1.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form1.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form1.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:55:12.64Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form3.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form3.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form3.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form3.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwv4gAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:07:08.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form2.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form2.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form2.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form2.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwEsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T18:05:52.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form6.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form6.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form6.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form6.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form6.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAIwBcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T18:09:21.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form1.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form1.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form1.cs [Design]",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:53:36.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form5.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form5.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form5.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form5.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAwHcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T17:28:08.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form4.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form4.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form4.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form4.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T16:45:22.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form7.cs",
+              "DocumentMoniker": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form7.cs",
+              "RelativeDocumentMoniker": "AplicatieCabinetVeterinar\\Form7.cs",
+              "ToolTip": "C:\\Users\\Vlad\\source\\repos\\AplicatieCabinetVeterinar\\AplicatieCabinetVeterinar\\Form7.cs",
+              "RelativeToolTip": "AplicatieCabinetVeterinar\\Form7.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T12:10:14.803Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

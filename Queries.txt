@@ -1,0 +1,110 @@
+--Query1--
+SELECT Cl.Nume AS NumeClient, A.NumeAnimal AS Nume_Animal, C.DataEfectuare AS Data, S.Denumire AS Serviciu
+FROM consultatii C JOIN animale A ON C.AnimalID = A.AnimalID
+		   JOIN veterinari V ON V.MedicID = C.MedicID
+		   JOIN servicii S ON S.ServiciuID = C.ServiciuID
+		   JOIN clienti Cl ON A.ClientID = Cl.ClientID
+WHERE V.CNP = @CNP
+
+--Query2--
+SELECT AVG(R.Scor) AS Recenzie_medie, V.Nume AS NumeMedic, V.Prenume AS PrenumeMedic
+FROM reviews R JOIN consultatii C ON C.ConsultatieID = R.ConsultatieID
+	       JOIN veterinari V ON V.MedicID = C.MedicID
+WHERE V.CNP = @CNP
+GROUP BY V.Nume, V.Prenume
+
+--Query3--
+SELECT SUM(S.Preț) AS Total, Cl.Nume AS NumeClient, Cl.Prenume AS PrenumeClient
+FROM servicii S JOIN consultatii C ON S.ServiciuID = C.ServiciuID
+		JOIN animale A ON C.AnimalID = A.AnimalID
+		JOIN clienti Cl ON A.ClientID = Cl.ClientID
+WHERE Cl.CNP = @CNP
+GROUP BY Cl.Nume,Cl.Prenume
+
+--Query4--
+SELECT A.NumeAnimal AS Nume, A.Vârstă AS Vârstă, A.Specie AS Specie, A.Rasă AS Rasă
+FROM animale A JOIN clienti Cl ON A.ClientID = Cl.ClientID
+WHERE Cl.CNP = @CNP
+
+--Query5--
+SELECT Af.Denumire AS NumeAfecțiune, MAX(Aaf.DataDiagnostic) AS CelMaiRecentDiagnostic
+FROM afectiunimedicale Af JOIN animale_cu_afectiuni Aaf ON Af.AfectiuneID = Aaf.AfectiuneID
+GROUP BY Af.Denumire
+ORDER BY MAX(Aaf.DataDiagnostic) DESC
+
+--Query6--
+SELECT A.NumeAnimal AS Nume, A.Vârstă AS Vârstă, A.Specie AS Specie, A.Rasă AS Rasă, Aaf.DataDiagnostic AS DataDiagnostic, Af.Denumire
+FROM animale_cu_afectiuni Aaf JOIN animale A ON Aaf.AnimalID = A.AnimalID
+			      JOIN afectiuni Af ON Aaf.AfectiuneID = Af.AfectiuneID
+WHERE Aaf.Stare = @stare
+
+--Query7--
+SELECT Cl.Nume AS NumeClient, A.NumeAnimal AS Nume_Animal, C.DataEfectuare AS Data, S.Denumire AS Serviciu, V.Nume AS NumeVeterinar, V.Prenume AS PrenumeVeterinar
+FROM consultatii C JOIN animale A ON C.AnimalID = A.AnimalID
+		   JOIN veterinari V ON V.MedicID = C.MedicID
+		   JOIN servicii S ON S.ServiciuID = C.ServiciuID
+		   JOIN clienti Cl ON A.ClientID = Cl.ClientID
+WHERE C.DataEfectuare >= @BeginDate AND C.DataEfectuare <= @Date
+
+--Query8--
+SELECT S.Denumire AS Denumire, Cat.Denumire AS Categorie, S.Preț AS Preț, S.Detalii AS Detalii
+FROM servicii S JOIN categoriiservicii Cat ON S.CategorieID = Cat.CategorieID
+
+
+--Query_complex 1--
+SELECT A.NumeAnimal, A.Vârstă, A.Specie, COALESCE(A.Rasă,'Nu are') AS Rasă, CONCAT(C.Nume,' ',C.Prenume) AS NumeClient FROM animale A 
+JOIN clienti C ON A.ClientID=C.ClientID
+WHERE AnimalID NOT IN (SELECT AnimalID FROM animale_cu_afectiuni)
+
+--Query_complex 2--
+SELECT A.NumeAnimal, A.Vârstă, A.Specie, COALESCE(A.Rasă,'Nu are') AS Rasă, CONCAT(C.Nume,' ',C.Prenume) AS NumeClient, COUNT(Co.ConsultatieID) AS NrConsultatii
+FROM animale A JOIN clienti C ON A.ClientID=C.ClientID JOIN consultatii Co ON Co.AnimalID = A.AnimalID
+GROUP BY A.NumeAnimal, A.Vârstă, A.Specie, A.Rasă, C.Nume, C.Prenume
+HAVING COUNT(Co.ConsultatieID) > (SELECT AVG(NrCon) FROM (SELECT COUNT(C2.ConsultatieID) AS NrCon FROM consultatii C2 GROUP BY C2.AnimalID) AS Subquery)
+
+--Query_complex 3--
+SELECT V.Nume, V.Prenume, SUM(S.Preț) AS Total
+FROM veterinari V JOIN consultatii Co ON V.MedicID = Co.MedicID JOIN servicii S ON Co.ServiciuID = S.ServiciuID
+GROUP BY V.Nume, V.Prenume
+HAVING SUM(S.Preț) > (SELECT SUM(S2.Preț) FROM servicii S2 JOIN consultatii Co2 ON S2.ServiciuID = Co2.ServiciuID JOIN veterinari V2 ON Co2.MedicID ON V2.MedicID WHERE V2.CNP = @CNP)
+
+--Query_complex 4--
+SELECT 
+    C.Denumire AS Categorie, 
+    (
+        SELECT TOP 1 S.Denumire 
+        FROM servicii S 
+        JOIN consultatii Co ON S.ServiciuID = Co.ServiciuID 
+        WHERE S.CategorieID = C.CategorieID 
+        GROUP BY S.Denumire 
+        ORDER BY COUNT(Co.ConsultatieID) DESC
+    ) AS ServiciuPopular
+FROM categoriiservicii C
+
+--Query_complex 5--
+SELECT CONCAT(Cl.Nume,' ',Cl.Prenume) AS Nume, AVG(R.Scor) AS Medie
+FROM clienti Cl JOIN reviews R ON Cl.ClientID = R.ClientID
+WHERE Cl.CNP != @CNP1
+GROUP BY Cl.Nume, Cl.Prenume
+HAVING ABS(AVG(R.Scor) - (SELECT AVG(R2.Scor) FROM reviews R2 JOIN clienti Cl2 ON R2.ClientID=Cl2.ClientID WHERE Cl2.CNP = @CNP2)) <= 0.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
